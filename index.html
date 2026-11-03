@@ -6,7 +6,7 @@
 <title>栖心情绪日记</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=ZCOOL+XiaoWei&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600&display=swap">
 <style>
 /* Layout: one calm column (max 880px), sticky segmented nav, cards only for tools & entries */
 :root{
@@ -14,7 +14,7 @@
   --accent:#2D6B66; --accent-ink:#FFFFFF; --accent-soft:#DDEBE8; --warn-soft:#FBEDE6; --warn:#A4482A;
   --e-joy:#D69A16; --e-calm:#3F8F84; --e-grat:#7FA23C; --e-tired:#80858F;
   --e-anx:#C1653A; --e-sad:#4A6DB3; --e-irr:#B4434B; --e-lone:#7660A6;
-  --f-display:"ZCOOL XiaoWei","STKaiti","KaiTi",serif;
+  --f-display:"Noto Serif SC","Songti SC","SimSun",serif;
   --f-body:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
   --r:14px;
 }
@@ -30,11 +30,13 @@
   --e-anx:#E38A5D; --e-sad:#7E9EE0; --e-irr:#E0737A; --e-lone:#A08DD0; color-scheme:dark}
 
 *{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.65;
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
 .wrap{max-width:880px;margin:0 auto}
-h1,h2,h3{font-family:var(--f-display);font-weight:400;text-wrap:balance;margin:0;letter-spacing:.02em}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;text-wrap:balance;margin:0;letter-spacing:.02em}
 h2{font-size:1.6rem}
 h3{font-size:1.2rem}
 p{margin:0}
